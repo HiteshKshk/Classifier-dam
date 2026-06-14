@@ -1,0 +1,4 @@
+cd D:\PROJECTS\DAM
+echo google-genai > requirements.txt
+echo jsonschema >> requirements.txt
+echo python-dotenv >> requirements.txt

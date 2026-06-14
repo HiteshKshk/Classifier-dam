@@ -1,0 +1,407 @@
+[
+  {
+    "input": "URGENT: Your SBI KYC expires in 24 hours. Click here to update or your account will be blocked: bit.ly/sbi-kyc-update",
+    "category": "scam",
+    "risk_type": "kyc_scam",
+    "risk_level": "high",
+    "confidence_ceiling": "medium",
+    "risk_signals": [
+      "urgent_deadline",
+      "suspicious_link"
+    ],
+    "evidence_needed": [
+      "official SBI communication",
+      "verification of link authenticity"
+    ],
+    "recommended_action": "do not click on the link, contact SBI directly",
+    "uncertainty_note": "lack of official SBI branding and potential phishing attempt",
+    "_rule_signals_detected": [
+      "urgent_deadline",
+      "suspicious_link"
+    ],
+    "_rule_risk_level": "high",
+    "_validation": "pass"
+  },
+  {
+    "input": "Dear citizen, Cybercrime Division has registered a case against your Aadhaar number. Call immediately to avoid arrest: 9XXXXXXXXX",
+    "category": "scam",
+    "risk_type": "authority_impersonation",
+    "risk_level": "high",
+    "confidence_ceiling": "medium",
+    "risk_signals": [
+      "urgent_deadline",
+      "authority_threat",
+      "unsolicited_contact"
+    ],
+    "evidence_needed": [
+      "official documentation from Cybercrime Division",
+      "verification of the phone number"
+    ],
+    "recommended_action": "do not call the provided number, instead contact official authorities to verify the claim",
+    "uncertainty_note": "lack of official documentation and verification of the phone number",
+    "_rule_signals_detected": [
+      "urgent_deadline",
+      "authority_threat"
+    ],
+    "_rule_risk_level": "high",
+    "_validation": "pass"
+  },
+  {
+    "input": "Congratulations! You have won Rs 15 lakh in Flipkart Lucky Draw. Pay Rs 500 processing fee to claim your prize.",
+    "category": "scam",
+    "risk_type": "fake_reward",
+    "risk_level": "high",
+    "confidence_ceiling": "medium",
+    "risk_signals": [
+      "payment_request",
+      "fake_reward",
+      "unsolicited_win_notification"
+    ],
+    "evidence_needed": [
+      "official_confirmation_from_Flipkart",
+      "proof_of_participation_in_lucky_draw"
+    ],
+    "recommended_action": "do_not_pay_processing_fee_and_report_to_authorities",
+    "uncertainty_note": "no_uncertainty_as_claim_matches_known_scam_patterns",
+    "_rule_signals_detected": [
+      "payment_request",
+      "fake_reward"
+    ],
+    "_rule_risk_level": "high",
+    "_validation": "pass"
+  },
+  {
+    "input": "BREAKING: Government to ban all Rs 500 notes from midnight tonight. Withdraw your cash immediately. Share with family!",
+    "category": "misinformation",
+    "risk_type": "authority_impersonation",
+    "risk_level": "high",
+    "confidence_ceiling": "low",
+    "risk_signals": [
+      "urgent_deadline",
+      "payment_request",
+      "forward_pressure"
+    ],
+    "evidence_needed": [
+      "official government announcement",
+      "verification from reputable news sources"
+    ],
+    "recommended_action": "verify information through official channels before taking any action",
+    "uncertainty_note": "claim lacks credible sources and has characteristics of a scam",
+    "_rule_signals_detected": [
+      "urgent_deadline",
+      "payment_request",
+      "forward_pressure"
+    ],
+    "_rule_risk_level": "high",
+    "_validation": "pass"
+  },
+  {
+    "input": "This Ayurvedic remedy cures diabetes permanently in 7 days. Doctors don't want you to know this. WhatsApp us now.",
+    "category": "misinformation",
+    "risk_type": "health_misinformation",
+    "risk_level": "high",
+    "confidence_ceiling": "medium",
+    "risk_signals": [
+      "unrealistic_cure_claim",
+      "conspiracy_theory",
+      "payment_request"
+    ],
+    "evidence_needed": [
+      "scientific_evidence",
+      "medical_expert_testimony"
+    ],
+    "recommended_action": "reject_claim",
+    "uncertainty_note": "lack_of_transparency_about_remedy_and_its_effectiveness",
+    "_rule_signals_detected": [
+      "payment_request",
+      "health_miracle"
+    ],
+    "_rule_risk_level": "high",
+    "_validation": "pass"
+  },
+  {
+    "input": "Invest in CryptoGrow today. Guaranteed 40% return in 30 days. Only 10 slots left. Send USDT to this wallet now.",
+    "category": "scam",
+    "risk_type": "investment_scam",
+    "risk_level": "high",
+    "confidence_ceiling": "medium",
+    "risk_signals": [
+      "payment_request",
+      "guaranteed_return",
+      "limited_time_offer"
+    ],
+    "evidence_needed": [
+      "proof_of_payouts",
+      "regulatory_compliance",
+      "transparent_investment_strategy"
+    ],
+    "recommended_action": "do_not_invest",
+    "uncertainty_note": "lack_of_transparency_and_unrealistic_return",
+    "_rule_signals_detected": [
+      "payment_request",
+      "guaranteed_return"
+    ],
+    "_rule_risk_level": "high",
+    "_validation": "pass"
+  },
+  {
+    "input": "TRAI will deactivate your mobile number in 2 hours due to illegal activity. Press 1 to speak with officer.",
+    "category": "scam",
+    "risk_type": "authority_impersonation",
+    "risk_level": "high",
+    "confidence_ceiling": "medium",
+    "risk_signals": [
+      "urgent_deadline",
+      "payment_request",
+      "authority_threat"
+    ],
+    "evidence_needed": [
+      "official TRAI statement",
+      "verification of officer identity"
+    ],
+    "recommended_action": "do not respond, report to authorities",
+    "uncertainty_note": "claim lacks official verification, typical of impersonation scams",
+    "_rule_signals_detected": [
+      "urgent_deadline",
+      "payment_request",
+      "authority_threat"
+    ],
+    "_rule_risk_level": "high",
+    "_validation": "pass"
+  },
+  {
+    "input": "Forward this message to 10 friends or your WhatsApp account will be permanently deleted by 11:59 PM tonight.",
+    "category": "scam",
+    "risk_type": "social_viral",
+    "risk_level": "high",
+    "confidence_ceiling": "medium",
+    "risk_signals": [
+      "urgent_deadline",
+      "forward_pressure"
+    ],
+    "evidence_needed": [
+      "official WhatsApp statements",
+      "fact-checking reports"
+    ],
+    "recommended_action": "do not forward the message and verify the claim through official channels",
+    "uncertainty_note": "the claim is likely a hoax, but verification is needed to confirm",
+    "_rule_signals_detected": [
+      "urgent_deadline",
+      "forward_pressure"
+    ],
+    "_rule_risk_level": "medium",
+    "_validation": "pass"
+  },
+  {
+    "input": "New AI tool called PrivacyScan can access all your photos and messages without your permission. It is already installed on your phone.",
+    "category": "misinformation",
+    "risk_type": "tech_misinformation",
+    "risk_level": "medium",
+    "confidence_ceiling": "low",
+    "risk_signals": [
+      "unverified claim of unauthorized access",
+      "implausible installation without user knowledge"
+    ],
+    "evidence_needed": [
+      "official statement from device manufacturer",
+      "technical analysis of PrivacyScan tool"
+    ],
+    "recommended_action": "verify information through reputable sources before taking action",
+    "uncertainty_note": "lack of concrete evidence to support the claim",
+    "_rule_signals_detected": [],
+    "_rule_risk_level": "low",
+    "_validation": "pass"
+  },
+  {
+    "input": "The government has announced free LPG cylinders for all BPL families. Apply at this link before March 31.",
+    "category": "misinformation",
+    "risk_type": "authority_impersonation",
+    "risk_level": "medium",
+    "confidence_ceiling": "low",
+    "risk_signals": [
+      "urgent_deadline",
+      "payment_request",
+      "unsolicited_link"
+    ],
+    "evidence_needed": [
+      "official government announcement",
+      "verification of link authenticity"
+    ],
+    "recommended_action": "verify information through official government channels",
+    "uncertainty_note": "lack of credible sources and potential phishing attempt",
+    "_rule_signals_detected": [
+      "urgent_deadline",
+      "payment_request"
+    ],
+    "_rule_risk_level": "high",
+    "_validation": "pass"
+  },
+  {
+    "input": "Water boils at 100 degrees Celsius at sea level atmospheric pressure.",
+    "category": "safe",
+    "risk_type": "safe_factual",
+    "risk_level": "low",
+    "confidence_ceiling": "high",
+    "risk_signals": [],
+    "evidence_needed": [],
+    "recommended_action": "none",
+    "uncertainty_note": "none",
+    "_rule_signals_detected": [],
+    "_rule_risk_level": "low",
+    "_validation": "pass"
+  },
+  {
+    "input": "Your UPI account has been flagged for suspicious activity. Verify at paytm-secure-verify.info within 6 hours.",
+    "category": "scam",
+    "risk_type": "authority_impersonation",
+    "risk_level": "high",
+    "confidence_ceiling": "medium",
+    "risk_signals": [
+      "payment_request",
+      "suspicious_link",
+      "urgency_tactic"
+    ],
+    "evidence_needed": [
+      "official_statement_from_paytm",
+      "verification_of_website_authenticity"
+    ],
+    "recommended_action": "do_not_click_on_link_and_verify_through_official_paytm_channels",
+    "uncertainty_note": "lack_of_official_confirmation_from_paytm",
+    "_rule_signals_detected": [
+      "payment_request",
+      "suspicious_link"
+    ],
+    "_rule_risk_level": "high",
+    "_validation": "pass"
+  },
+  {
+    "input": "Election EVMs were hacked in the last election. A whistleblower has proof. Share before this gets deleted.",
+    "category": "misinformation",
+    "risk_type": "political_rumor",
+    "risk_level": "medium",
+    "confidence_ceiling": "low",
+    "risk_signals": [
+      "urgent_deadline",
+      "forward_pressure",
+      "unverified_claim",
+      "sensational_language"
+    ],
+    "evidence_needed": [
+      "official investigation reports",
+      "credible sources confirming the whistleblower's identity and proof"
+    ],
+    "recommended_action": "do not share, verify information through reputable sources",
+    "uncertainty_note": "lack of concrete evidence and credible sources to support the claim",
+    "_rule_signals_detected": [
+      "urgent_deadline",
+      "forward_pressure"
+    ],
+    "_rule_risk_level": "medium",
+    "_validation": "pass"
+  },
+  {
+    "input": "A new WhatsApp update will start charging Rs 99/month from next week unless you forward this message to 20 contacts.",
+    "category": "misinformation",
+    "risk_type": "social_viral",
+    "risk_level": "medium",
+    "confidence_ceiling": "low",
+    "risk_signals": [
+      "payment_request",
+      "forward_pressure"
+    ],
+    "evidence_needed": [
+      "official WhatsApp announcement",
+      "reliable news sources"
+    ],
+    "recommended_action": "verify with official sources before taking any action",
+    "uncertainty_note": "lack of credible sources to support the claim",
+    "_rule_signals_detected": [
+      "payment_request",
+      "forward_pressure"
+    ],
+    "_rule_risk_level": "high",
+    "_validation": "pass"
+  },
+  {
+    "input": "Join our real estate investment group. Minimum Rs 50,000 deposit. Properties in Dubai. Returns guaranteed by contract.",
+    "category": "scam",
+    "risk_type": "investment_scam",
+    "risk_level": "high",
+    "confidence_ceiling": "medium",
+    "risk_signals": [
+      "payment_request",
+      "guaranteed_return",
+      "high-pressure_investment"
+    ],
+    "evidence_needed": [
+      "contract_details",
+      "investment_track_record",
+      "regulatory_approval"
+    ],
+    "recommended_action": "avoid_investment",
+    "uncertainty_note": "lack_of_transparency_in_contract_details",
+    "_rule_signals_detected": [
+      "payment_request",
+      "guaranteed_return"
+    ],
+    "_rule_risk_level": "high",
+    "_validation": "pass"
+  },
+  {
+    "input": "India's GDP growth rate in 2023-24 was reported as 8.2% by the Ministry of Statistics.",
+    "category": "safe",
+    "risk_type": "safe_factual",
+    "risk_level": "low",
+    "confidence_ceiling": "medium",
+    "risk_signals": [],
+    "evidence_needed": [
+      "official government reports",
+      "verified news sources"
+    ],
+    "recommended_action": "verify with official sources",
+    "uncertainty_note": "claim appears to be factual but requires verification",
+    "_rule_signals_detected": [],
+    "_rule_risk_level": "low",
+    "_validation": "pass"
+  },
+  {
+    "input": "A local NGO is distributing free blankets in Delhi this Saturday. Venue not yet confirmed. More details awaited.",
+    "category": "ambiguous",
+    "risk_type": "ambiguous_claim",
+    "risk_level": "low",
+    "confidence_ceiling": "low",
+    "risk_signals": [],
+    "evidence_needed": [
+      "venue confirmation",
+      "NGO verification",
+      "event details"
+    ],
+    "recommended_action": "wait for more information",
+    "uncertainty_note": "lack of specific details about the event and organizing NGO",
+    "_rule_signals_detected": [],
+    "_rule_risk_level": "low",
+    "_validation": "pass"
+  },
+  {
+    "input": "Scientists have discovered that drinking warm turmeric water every morning prevents cancer. No clinical trials yet but results are promising.",
+    "category": "misinformation",
+    "risk_type": "health_misinformation",
+    "risk_level": "medium",
+    "confidence_ceiling": "low",
+    "risk_signals": [
+      "unproven_health_claim",
+      "lack_of_clinical_trials"
+    ],
+    "evidence_needed": [
+      "peer-reviewed_studies",
+      "clinical_trial_results"
+    ],
+    "recommended_action": "seek_medical_professional_advice",
+    "uncertainty_note": "claim_lacks_scientific_evidence",
+    "_rule_signals_detected": [
+      "health_miracle"
+    ],
+    "_rule_risk_level": "medium",
+    "_validation": "pass"
+  }
+]
