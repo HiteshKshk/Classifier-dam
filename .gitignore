@@ -1,0 +1,14 @@
+# Local environment settings
+.env
+
+# Python caching and build directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# IDE settings
+.vscode/
+.idea/
+.qodo/
